@@ -1,0 +1,2 @@
+Invoking command in '/home/zebby/ws1/build/my_robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20
+Invoked command in '/home/zebby/ws1/build/my_robot_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20

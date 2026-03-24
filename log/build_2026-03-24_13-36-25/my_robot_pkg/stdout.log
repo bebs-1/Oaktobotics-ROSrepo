@@ -1,0 +1,39 @@
+/usr/bin/cmake -S/home/zebby/ws1/src/my_robot_pkg -B/home/zebby/ws1/build/my_robot_pkg --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/zebby/ws1/build/my_robot_pkg/CMakeFiles /home/zebby/ws1/build/my_robot_pkg//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/zebby/ws1/build/my_robot_pkg'
+/usr/bin/gmake  -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/depend
+gmake[2]: Entering directory '/home/zebby/ws1/build/my_robot_pkg'
+cd /home/zebby/ws1/build/my_robot_pkg && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/zebby/ws1/src/my_robot_pkg /home/zebby/ws1/src/my_robot_pkg /home/zebby/ws1/build/my_robot_pkg /home/zebby/ws1/build/my_robot_pkg /home/zebby/ws1/build/my_robot_pkg/CMakeFiles/motor_driver.dir/DependInfo.cmake --color=
+gmake[2]: Leaving directory '/home/zebby/ws1/build/my_robot_pkg'
+/usr/bin/gmake  -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/build
+gmake[2]: Entering directory '/home/zebby/ws1/build/my_robot_pkg'
+gmake[2]: Nothing to be done for 'CMakeFiles/motor_driver.dir/build'.
+gmake[2]: Leaving directory '/home/zebby/ws1/build/my_robot_pkg'
+[100%] Built target motor_driver
+gmake[1]: Leaving directory '/home/zebby/ws1/build/my_robot_pkg'
+/usr/bin/cmake -E cmake_progress_start /home/zebby/ws1/build/my_robot_pkg/CMakeFiles 0
+-- Install configuration: ""
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/lib/my_robot_pkg/motor_driver
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/include
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/include/my_robot_pkg
+-- Installing: /home/zebby/ws1/install/my_robot_pkg/lib/my_robot_pkg/command_sender.py
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/launch
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/launch/robot_launch.py
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/ament_index/resource_index/package_run_dependencies/my_robot_pkg
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/ament_index/resource_index/parent_prefix_path/my_robot_pkg
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/environment/path.sh
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/environment/path.dsv
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/local_setup.bash
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/local_setup.sh
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/local_setup.zsh
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/local_setup.dsv
+-- Installing: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/package.dsv
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/ament_index/resource_index/packages/my_robot_pkg
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/cmake/my_robot_pkgConfig.cmake
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/cmake/my_robot_pkgConfig-version.cmake
+-- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/package.xml

@@ -1,0 +1,197 @@
+[0.000000] (-) TimerEvent: {}
+[0.000563] (my_robot_pkg) JobQueued: {'identifier': 'my_robot_pkg', 'dependencies': OrderedDict()}
+[0.000724] (my_robot_pkg) JobStarted: {'identifier': 'my_robot_pkg'}
+[0.005838] (my_robot_pkg) JobProgress: {'identifier': 'my_robot_pkg', 'progress': 'cmake'}
+[0.006317] (my_robot_pkg) JobProgress: {'identifier': 'my_robot_pkg', 'progress': 'build'}
+[0.006968] (my_robot_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zebby/ws1/build/my_robot_pkg', '--', '-j20', '-l20'], 'cwd': '/home/zebby/ws1/build/my_robot_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zebby'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zebby/ros2_ws/install/ros2_control_test_assets/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zebby'), ('OLDPWD', '/home/zebby'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/zebby/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zebby'), ('NAME', 'DESKTOP-S0F2SG8'), ('WSL_INTEROP', '/run/WSL/386_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.5.10021.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/zebby/AppData/Local/Programs/Python/Python311/Scripts:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/zebby/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zebby/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zebby/AppData/Local/Python/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/home/zebby/ros2_ws/install/ros2_control_test_assets:/home/zebby/ros2_ws/install/my_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/zebby/ws1/build/my_robot_pkg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zebby/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/zebby/ros2_ws/install/ros2_control_test_assets:/home/zebby/ros2_ws/install/my_package:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.019982] (my_robot_pkg) StdoutLine: {'line': b'/usr/bin/cmake -S/home/zebby/ws1/src/my_robot_pkg -B/home/zebby/ws1/build/my_robot_pkg --check-build-system CMakeFiles/Makefile.cmake 0\n'}
+[0.027270] (my_robot_pkg) StdoutLine: {'line': b'/usr/bin/cmake -E cmake_progress_start /home/zebby/ws1/build/my_robot_pkg/CMakeFiles /home/zebby/ws1/build/my_robot_pkg//CMakeFiles/progress.marks\n'}
+[0.033567] (my_robot_pkg) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/Makefile2 all\n'}
+[0.034584] (my_robot_pkg) StdoutLine: {'line': b"gmake[1]: Entering directory '/home/zebby/ws1/build/my_robot_pkg'\n"}
+[0.034713] (my_robot_pkg) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/depend\n'}
+[0.036812] (my_robot_pkg) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/zebby/ws1/build/my_robot_pkg'\n"}
+[0.036922] (my_robot_pkg) StdoutLine: {'line': b'cd /home/zebby/ws1/build/my_robot_pkg && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/zebby/ws1/src/my_robot_pkg /home/zebby/ws1/src/my_robot_pkg /home/zebby/ws1/build/my_robot_pkg /home/zebby/ws1/build/my_robot_pkg /home/zebby/ws1/build/my_robot_pkg/CMakeFiles/motor_driver.dir/DependInfo.cmake --color=\n'}
+[0.043343] (my_robot_pkg) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/zebby/ws1/build/my_robot_pkg'\n"}
+[0.043639] (my_robot_pkg) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/build\n'}
+[0.046758] (my_robot_pkg) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/zebby/ws1/build/my_robot_pkg'\n"}
+[0.053300] (my_robot_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o\x1b[0m\n'}
+[0.053727] (my_robot_pkg) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/zebby/ws1/src/my_robot_pkg/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -Wall -Wextra -Wpedantic -MD -MT CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o -MF CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o.d -o CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o -c /home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp\n'}
+[0.101277] (-) TimerEvent: {}
+[0.206742] (-) TimerEvent: {}
+[0.312155] (-) TimerEvent: {}
+[0.417785] (-) TimerEvent: {}
+[0.521639] (-) TimerEvent: {}
+[0.627181] (-) TimerEvent: {}
+[0.732716] (-) TimerEvent: {}
+[0.838022] (-) TimerEvent: {}
+[0.943543] (-) TimerEvent: {}
+[1.048974] (-) TimerEvent: {}
+[1.154426] (-) TimerEvent: {}
+[1.259939] (-) TimerEvent: {}
+[1.365340] (-) TimerEvent: {}
+[1.470745] (-) TimerEvent: {}
+[1.576189] (-) TimerEvent: {}
+[1.681631] (-) TimerEvent: {}
+[1.787284] (-) TimerEvent: {}
+[1.892474] (-) TimerEvent: {}
+[1.934915] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:79:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSparkMax\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.935093] (my_robot_pkg) StderrLine: {'line': b'   79 |     \x1b[01;31m\x1b[KSparkMax\x1b[m\x1b[K motor1;\n'}
+[1.935131] (my_robot_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.936046] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:80:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSparkMax\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.936176] (my_robot_pkg) StderrLine: {'line': b'   80 |     \x1b[01;31m\x1b[KSparkMax\x1b[m\x1b[K motor2;\n'}
+[1.936212] (my_robot_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.937101] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:81:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSparkMax\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.937222] (my_robot_pkg) StderrLine: {'line': b'   81 |     \x1b[01;31m\x1b[KSparkMax\x1b[m\x1b[K motor3;\n'}
+[1.937259] (my_robot_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.938038] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:82:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSparkMax\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.938131] (my_robot_pkg) StderrLine: {'line': b'   82 |     \x1b[01;31m\x1b[KSparkMax\x1b[m\x1b[K motor4;\n'}
+[1.938165] (my_robot_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.967164] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMotorDriver::MotorDriver()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.967337] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:14:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KMotorDriver\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kmotor1\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.967390] (my_robot_pkg) StderrLine: {'line': b'   14 |       \x1b[01;31m\x1b[Kmotor1\x1b[m\x1b[K("can0", 1),\n'}
+[1.967423] (my_robot_pkg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.967454] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:15:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KMotorDriver\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kmotor2\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.967484] (my_robot_pkg) StderrLine: {'line': b'   15 |       \x1b[01;31m\x1b[Kmotor2\x1b[m\x1b[K("can0", 2),\n'}
+[1.967513] (my_robot_pkg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.967541] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:16:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KMotorDriver\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kmotor3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.967570] (my_robot_pkg) StderrLine: {'line': b'   16 |       \x1b[01;31m\x1b[Kmotor3\x1b[m\x1b[K("can0", 3),\n'}
+[1.967601] (my_robot_pkg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.967627] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:17:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KMotorDriver\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kmotor4\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.967655] (my_robot_pkg) StderrLine: {'line': b'   17 |       \x1b[01;31m\x1b[Kmotor4\x1b[m\x1b[K("can0", 4)\n'}
+[1.967682] (my_robot_pkg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.977028] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:24:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.977197] (my_robot_pkg) StderrLine: {'line': b'   24 |         \x1b[01;31m\x1b[Kmotor1\x1b[m\x1b[K.SetMotorType(MotorType::kBrushless);\n'}
+[1.977238] (my_robot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.977481] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:24:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMotorType\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.977586] (my_robot_pkg) StderrLine: {'line': b'   24 |         motor1.SetMotorType(\x1b[01;31m\x1b[KMotorType\x1b[m\x1b[K::kBrushless);\n'}
+[1.977626] (my_robot_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.981077] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.981209] (my_robot_pkg) StderrLine: {'line': b'   25 |         \x1b[01;31m\x1b[Kmotor2\x1b[m\x1b[K.SetMotorType(MotorType::kBrushless);\n'}
+[1.981246] (my_robot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.981278] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:25:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMotorType\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.981309] (my_robot_pkg) StderrLine: {'line': b'   25 |         motor2.SetMotorType(\x1b[01;31m\x1b[KMotorType\x1b[m\x1b[K::kBrushless);\n'}
+[1.981337] (my_robot_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.984781] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:26:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor3\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.984895] (my_robot_pkg) StderrLine: {'line': b'   26 |         \x1b[01;31m\x1b[Kmotor3\x1b[m\x1b[K.SetMotorType(MotorType::kBrushless);\n'}
+[1.984933] (my_robot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.984966] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:26:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMotorType\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.985018] (my_robot_pkg) StderrLine: {'line': b'   26 |         motor3.SetMotorType(\x1b[01;31m\x1b[KMotorType\x1b[m\x1b[K::kBrushless);\n'}
+[1.985058] (my_robot_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.988291] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:27:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor4\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.988571] (my_robot_pkg) StderrLine: {'line': b'   27 |         \x1b[01;31m\x1b[Kmotor4\x1b[m\x1b[K.SetMotorType(MotorType::kBrushless);\n'}
+[1.988628] (my_robot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.988660] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:27:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMotorType\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.988690] (my_robot_pkg) StderrLine: {'line': b'   27 |         motor4.SetMotorType(\x1b[01;31m\x1b[KMotorType\x1b[m\x1b[K::kBrushless);\n'}
+[1.988719] (my_robot_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.988747] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:29:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KIdleMode\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.988777] (my_robot_pkg) StderrLine: {'line': b'   29 |         motor1.SetIdleMode(\x1b[01;31m\x1b[KIdleMode\x1b[m\x1b[K::kBrake);\n'}
+[1.988804] (my_robot_pkg) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.988830] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:30:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KIdleMode\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.988858] (my_robot_pkg) StderrLine: {'line': b'   30 |         motor2.SetIdleMode(\x1b[01;31m\x1b[KIdleMode\x1b[m\x1b[K::kBrake);\n'}
+[1.988884] (my_robot_pkg) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.988910] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:31:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KIdleMode\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.988936] (my_robot_pkg) StderrLine: {'line': b'   31 |         motor3.SetIdleMode(\x1b[01;31m\x1b[KIdleMode\x1b[m\x1b[K::kBrake);\n'}
+[1.988963] (my_robot_pkg) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.988988] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:32:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KIdleMode\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.989017] (my_robot_pkg) StderrLine: {'line': b'   32 |         motor4.SetIdleMode(\x1b[01;31m\x1b[KIdleMode\x1b[m\x1b[K::kBrake);\n'}
+[1.989043] (my_robot_pkg) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.989070] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:34:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSensorType\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.989097] (my_robot_pkg) StderrLine: {'line': b'   34 |         motor1.SetSensorType(\x1b[01;31m\x1b[KSensorType\x1b[m\x1b[K::kHallSensor);\n'}
+[1.989124] (my_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.989150] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:35:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSensorType\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.989177] (my_robot_pkg) StderrLine: {'line': b'   35 |         motor2.SetSensorType(\x1b[01;31m\x1b[KSensorType\x1b[m\x1b[K::kHallSensor);\n'}
+[1.989236] (my_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.989273] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:36:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSensorType\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.989307] (my_robot_pkg) StderrLine: {'line': b'   36 |         motor3.SetSensorType(\x1b[01;31m\x1b[KSensorType\x1b[m\x1b[K::kHallSensor);\n'}
+[1.989335] (my_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.989362] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:37:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSensorType\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.989392] (my_robot_pkg) StderrLine: {'line': b'   37 |         motor4.SetSensorType(\x1b[01;31m\x1b[KSensorType\x1b[m\x1b[K::kHallSensor);\n'}
+[1.989420] (my_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.992769] (-) TimerEvent: {}
+[1.995153] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MotorDriver::cmd_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.995320] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:52:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.995359] (my_robot_pkg) StderrLine: {'line': b'   52 |             \x1b[01;31m\x1b[Kmotor1\x1b[m\x1b[K.SetDutyCycle(0.5);\n'}
+[1.995391] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.998870] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:53:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.999105] (my_robot_pkg) StderrLine: {'line': b'   53 |             \x1b[01;31m\x1b[Kmotor2\x1b[m\x1b[K.SetDutyCycle(0.5);\n'}
+[1.999152] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.002766] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:54:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor3\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.002940] (my_robot_pkg) StderrLine: {'line': b'   54 |             \x1b[01;31m\x1b[Kmotor3\x1b[m\x1b[K.SetDutyCycle(0.5);\n'}
+[2.002979] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.006414] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:55:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor4\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.006544] (my_robot_pkg) StderrLine: {'line': b'   55 |             \x1b[01;31m\x1b[Kmotor4\x1b[m\x1b[K.SetDutyCycle(0.5);\n'}
+[2.006600] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.010401] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:57:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.010537] (my_robot_pkg) StderrLine: {'line': b'   57 |             \x1b[01;31m\x1b[Kmotor1\x1b[m\x1b[K.SetDutyCycle(-0.5);\n'}
+[2.010587] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.014030] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:58:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.014160] (my_robot_pkg) StderrLine: {'line': b'   58 |             \x1b[01;31m\x1b[Kmotor2\x1b[m\x1b[K.SetDutyCycle(-0.5);\n'}
+[2.014197] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.017846] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:59:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor3\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.018019] (my_robot_pkg) StderrLine: {'line': b'   59 |             \x1b[01;31m\x1b[Kmotor3\x1b[m\x1b[K.SetDutyCycle(0.5);\n'}
+[2.018058] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.021395] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:60:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor4\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.021531] (my_robot_pkg) StderrLine: {'line': b'   60 |             \x1b[01;31m\x1b[Kmotor4\x1b[m\x1b[K.SetDutyCycle(0.5);\n'}
+[2.021568] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.025594] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:62:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.025745] (my_robot_pkg) StderrLine: {'line': b'   62 |             \x1b[01;31m\x1b[Kmotor1\x1b[m\x1b[K.SetDutyCycle(-0.5);\n'}
+[2.025782] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.029622] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:63:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.029812] (my_robot_pkg) StderrLine: {'line': b'   63 |             \x1b[01;31m\x1b[Kmotor2\x1b[m\x1b[K.SetDutyCycle(-0.5);\n'}
+[2.029850] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.033659] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:64:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor3\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.033835] (my_robot_pkg) StderrLine: {'line': b'   64 |             \x1b[01;31m\x1b[Kmotor3\x1b[m\x1b[K.SetDutyCycle(-0.5);\n'}
+[2.033878] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.037202] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:65:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor4\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.037332] (my_robot_pkg) StderrLine: {'line': b'   65 |             \x1b[01;31m\x1b[Kmotor4\x1b[m\x1b[K.SetDutyCycle(-0.5);\n'}
+[2.037386] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.041165] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:67:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.041337] (my_robot_pkg) StderrLine: {'line': b'   67 |             \x1b[01;31m\x1b[Kmotor1\x1b[m\x1b[K.SetDutyCycle(0.5);\n'}
+[2.041377] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.044755] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:68:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.044875] (my_robot_pkg) StderrLine: {'line': b'   68 |             \x1b[01;31m\x1b[Kmotor2\x1b[m\x1b[K.SetDutyCycle(0.5);\n'}
+[2.044915] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.048654] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:69:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor3\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.048819] (my_robot_pkg) StderrLine: {'line': b'   69 |             \x1b[01;31m\x1b[Kmotor3\x1b[m\x1b[K.SetDutyCycle(-0.5);\n'}
+[2.048857] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.052531] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:70:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor4\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.052680] (my_robot_pkg) StderrLine: {'line': b'   70 |             \x1b[01;31m\x1b[Kmotor4\x1b[m\x1b[K.SetDutyCycle(-0.5);\n'}
+[2.052719] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.056141] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:72:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.056253] (my_robot_pkg) StderrLine: {'line': b'   72 |             \x1b[01;31m\x1b[Kmotor1\x1b[m\x1b[K.SetDutyCycle(0.0);\n'}
+[2.056289] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.059448] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:73:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.059578] (my_robot_pkg) StderrLine: {'line': b'   73 |             \x1b[01;31m\x1b[Kmotor2\x1b[m\x1b[K.SetDutyCycle(0.0);\n'}
+[2.059619] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.063143] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:74:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor3\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.063351] (my_robot_pkg) StderrLine: {'line': b'   74 |             \x1b[01;31m\x1b[Kmotor3\x1b[m\x1b[K.SetDutyCycle(0.0);\n'}
+[2.063414] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.067394] (my_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:75:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor4\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.067600] (my_robot_pkg) StderrLine: {'line': b'   75 |             \x1b[01;31m\x1b[Kmotor4\x1b[m\x1b[K.SetDutyCycle(0.0);\n'}
+[2.067646] (my_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.094189] (-) TimerEvent: {}
+[2.199653] (-) TimerEvent: {}
+[2.305084] (-) TimerEvent: {}
+[2.410571] (-) TimerEvent: {}
+[2.516005] (-) TimerEvent: {}
+[2.621446] (-) TimerEvent: {}
+[2.726919] (-) TimerEvent: {}
+[2.832357] (-) TimerEvent: {}
+[2.937582] (-) TimerEvent: {}
+[3.043001] (-) TimerEvent: {}
+[3.148424] (-) TimerEvent: {}
+[3.253919] (-) TimerEvent: {}
+[3.359429] (-) TimerEvent: {}
+[3.460572] (-) TimerEvent: {}
+[3.566052] (-) TimerEvent: {}
+[3.671641] (-) TimerEvent: {}
+[3.777091] (-) TimerEvent: {}
+[3.882519] (-) TimerEvent: {}
+[3.937509] (my_robot_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/motor_driver.dir/build.make:79: CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o] Error 1\n'}
+[3.937968] (my_robot_pkg) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/zebby/ws1/build/my_robot_pkg'\n"}
+[3.938029] (my_robot_pkg) StdoutLine: {'line': b"gmake[1]: Leaving directory '/home/zebby/ws1/build/my_robot_pkg'\n"}
+[3.938063] (my_robot_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/motor_driver.dir/all] Error 2\n'}
+[3.938094] (my_robot_pkg) StderrLine: {'line': b'gmake: *** [Makefile:149: all] Error 2\n'}
+[3.940428] (my_robot_pkg) CommandEnded: {'returncode': 2}
+[3.946509] (my_robot_pkg) JobEnded: {'identifier': 'my_robot_pkg', 'rc': 2}
+[3.957709] (-) EventReactorShutdown: {}

@@ -1,0 +1,76 @@
+[0.007s] Invoking command in '/home/zebby/ws1/build/my_robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake /home/zebby/ws1/src/my_robot_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zebby/ws1/install/my_robot_pkg
+[0.057s] -- The C compiler identification is GNU 11.4.0
+[0.202s] -- The CXX compiler identification is GNU 11.4.0
+[0.300s] -- Detecting C compiler ABI info
+[0.358s] -- Detecting C compiler ABI info - done
+[0.362s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.362s] -- Detecting C compile features
+[0.362s] -- Detecting C compile features - done
+[0.364s] -- Detecting CXX compiler ABI info
+[0.427s] -- Detecting CXX compiler ABI info - done
+[0.430s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.431s] -- Detecting CXX compile features
+[0.431s] -- Detecting CXX compile features - done
+[0.432s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.514s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.548s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.563s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.616s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.618s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.622s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.629s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.637s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.660s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.661s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.052s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.473s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.211s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.215s] -- Looking for pthread.h
+[2.276s] -- Looking for pthread.h - found
+[2.276s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.338s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.339s] -- Found Threads: TRUE  
+[2.367s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[2.369s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.413s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.413s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/zebby/ws1/src/my_robot_pkg/include>
+[2.413s] -- Configured cppcheck exclude dirs and/or files: 
+[2.413s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.414s] -- Added test 'lint_cmake' to check CMake code style
+[2.414s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.414s] -- Added test 'uncrustify' to check C / C++ code style
+[2.414s] -- Configured uncrustify additional arguments: 
+[2.415s] -- Added test 'xmllint' to check XML markup files
+[2.416s] -- Configuring done
+[2.421s] -- Generating done
+[2.423s] -- Build files have been written to: /home/zebby/ws1/build/my_robot_pkg
+[2.429s] Invoked command in '/home/zebby/ws1/build/my_robot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake /home/zebby/ws1/src/my_robot_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zebby/ws1/install/my_robot_pkg
+[2.430s] Invoking command in '/home/zebby/ws1/build/my_robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20
+[2.452s] [35m[1mConsolidate compiler generated dependencies of target motor_driver[0m
+[2.461s] [ 50%] [32m[1mLinking CXX executable motor_driver[0m
+[2.686s] [100%] Built target motor_driver
+[2.693s] Invoked command in '/home/zebby/ws1/build/my_robot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20
+[2.698s] Invoking command in '/home/zebby/ws1/build/my_robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --install /home/zebby/ws1/build/my_robot_pkg
+[2.701s] -- Install configuration: ""
+[2.702s] -- Execute custom install script
+[2.702s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/lib/my_robot_pkg/motor_driver
+[2.706s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/lib/my_robot_pkg/command_sender.py
+[2.711s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/launch/robot_launch.py
+[2.716s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/ament_index/resource_index/package_run_dependencies/my_robot_pkg
+[2.721s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/ament_index/resource_index/parent_prefix_path/my_robot_pkg
+[2.726s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/environment/ament_prefix_path.sh
+[2.731s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/environment/ament_prefix_path.dsv
+[2.736s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/environment/path.sh
+[2.742s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/environment/path.dsv
+[2.747s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/local_setup.bash
+[2.753s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/local_setup.sh
+[2.758s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/local_setup.zsh
+[2.762s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/local_setup.dsv
+[2.767s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/package.dsv
+[2.772s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/ament_index/resource_index/packages/my_robot_pkg
+[2.777s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.781s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.786s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/cmake/my_robot_pkgConfig.cmake
+[2.791s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/cmake/my_robot_pkgConfig-version.cmake
+[2.796s] -- Symlinking: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/package.xml
+[2.802s] Invoked command in '/home/zebby/ws1/build/my_robot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --install /home/zebby/ws1/build/my_robot_pkg

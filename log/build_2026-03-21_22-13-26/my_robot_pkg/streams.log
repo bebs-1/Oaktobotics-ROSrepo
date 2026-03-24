@@ -1,0 +1,155 @@
+[0.013s] Invoking command in '/home/zebby/ws1/build/my_robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20
+[0.068s] /usr/bin/cmake -S/home/zebby/ws1/src/my_robot_pkg -B/home/zebby/ws1/build/my_robot_pkg --check-build-system CMakeFiles/Makefile.cmake 0
+[0.087s] /usr/bin/cmake -E cmake_progress_start /home/zebby/ws1/build/my_robot_pkg/CMakeFiles /home/zebby/ws1/build/my_robot_pkg//CMakeFiles/progress.marks
+[0.093s] /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+[0.095s] gmake[1]: Entering directory '/home/zebby/ws1/build/my_robot_pkg'
+[0.095s] /usr/bin/gmake  -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/depend
+[0.096s] gmake[2]: Entering directory '/home/zebby/ws1/build/my_robot_pkg'
+[0.096s] cd /home/zebby/ws1/build/my_robot_pkg && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/zebby/ws1/src/my_robot_pkg /home/zebby/ws1/src/my_robot_pkg /home/zebby/ws1/build/my_robot_pkg /home/zebby/ws1/build/my_robot_pkg /home/zebby/ws1/build/my_robot_pkg/CMakeFiles/motor_driver.dir/DependInfo.cmake --color=
+[0.103s] Dependencies file "CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o.d" is newer than depends file "/home/zebby/ws1/build/my_robot_pkg/CMakeFiles/motor_driver.dir/compiler_depend.internal".
+[0.103s] [35m[1mConsolidate compiler generated dependencies of target motor_driver[0m
+[0.108s] gmake[2]: Leaving directory '/home/zebby/ws1/build/my_robot_pkg'
+[0.108s] /usr/bin/gmake  -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/build
+[0.111s] gmake[2]: Entering directory '/home/zebby/ws1/build/my_robot_pkg'
+[0.116s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o[0m
+[0.117s] /usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/zebby/ws1/src/my_robot_pkg/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -Wall -Wextra -Wpedantic -MD -MT CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o -MF CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o.d -o CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o -c /home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp
+[1.980s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:47:5:[m[K [01;31m[Kerror: [m[K‘[01m[KSparkMax[m[K’ does not name a type
+[1.980s]    47 |     [01;31m[KSparkMax[m[K motor1;
+[1.980s]       |     [01;31m[K^~~~~~~~[m[K
+[1.980s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:48:5:[m[K [01;31m[Kerror: [m[K‘[01m[KSparkMax[m[K’ does not name a type
+[1.980s]    48 |     [01;31m[KSparkMax[m[K motor2;
+[1.980s]       |     [01;31m[K^~~~~~~~[m[K
+[1.981s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[KSparkMax[m[K’ does not name a type
+[1.981s]    49 |     [01;31m[KSparkMax[m[K motor3;
+[1.981s]       |     [01;31m[K^~~~~~~~[m[K
+[1.982s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[KSparkMax[m[K’ does not name a type
+[1.982s]    50 |     [01;31m[KSparkMax[m[K motor4;
+[1.982s]       |     [01;31m[K^~~~~~~~[m[K
+[2.011s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:[m[K In constructor ‘[01m[KMotorDriver::MotorDriver()[m[K’:
+[2.011s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:15:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorDriver[m[K’ does not have any field named ‘[01m[Kmotor1[m[K’
+[2.011s]    15 |       [01;31m[Kmotor1[m[K("can0", 1),
+[2.011s]       |       [01;31m[K^~~~~~[m[K
+[2.011s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:16:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorDriver[m[K’ does not have any field named ‘[01m[Kmotor2[m[K’
+[2.011s]    16 |       [01;31m[Kmotor2[m[K("can0", 2),
+[2.011s]       |       [01;31m[K^~~~~~[m[K
+[2.011s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:17:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorDriver[m[K’ does not have any field named ‘[01m[Kmotor3[m[K’
+[2.011s]    17 |       [01;31m[Kmotor3[m[K("can0", 3),
+[2.011s]       |       [01;31m[K^~~~~~[m[K
+[2.011s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:18:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorDriver[m[K’ does not have any field named ‘[01m[Kmotor4[m[K’
+[2.011s]    18 |       [01;31m[Kmotor4[m[K("can0", 4)
+[2.011s]       |       [01;31m[K^~~~~~[m[K
+[2.020s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:25:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor1[m[K’ was not declared in this scope
+[2.020s]    25 |         [01;31m[Kmotor1[m[K.SetMotorType(MotorType::kBrushless);
+[2.020s]       |         [01;31m[K^~~~~~[m[K
+[2.021s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:25:29:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorType[m[K’ has not been declared
+[2.021s]    25 |         motor1.SetMotorType([01;31m[KMotorType[m[K::kBrushless);
+[2.021s]       |                             [01;31m[K^~~~~~~~~[m[K
+[2.024s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor2[m[K’ was not declared in this scope
+[2.024s]    26 |         [01;31m[Kmotor2[m[K.SetMotorType(MotorType::kBrushless);
+[2.025s]       |         [01;31m[K^~~~~~[m[K
+[2.025s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:26:29:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorType[m[K’ has not been declared
+[2.025s]    26 |         motor2.SetMotorType([01;31m[KMotorType[m[K::kBrushless);
+[2.025s]       |                             [01;31m[K^~~~~~~~~[m[K
+[2.028s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor3[m[K’ was not declared in this scope
+[2.028s]    27 |         [01;31m[Kmotor3[m[K.SetMotorType(MotorType::kBrushless);
+[2.028s]       |         [01;31m[K^~~~~~[m[K
+[2.028s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:27:29:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorType[m[K’ has not been declared
+[2.028s]    27 |         motor3.SetMotorType([01;31m[KMotorType[m[K::kBrushless);
+[2.028s]       |                             [01;31m[K^~~~~~~~~[m[K
+[2.031s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor4[m[K’ was not declared in this scope
+[2.031s]    28 |         [01;31m[Kmotor4[m[K.SetMotorType(MotorType::kBrushless);
+[2.031s]       |         [01;31m[K^~~~~~[m[K
+[2.031s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:28:29:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorType[m[K’ has not been declared
+[2.031s]    28 |         motor4.SetMotorType([01;31m[KMotorType[m[K::kBrushless);
+[2.031s]       |                             [01;31m[K^~~~~~~~~[m[K
+[2.031s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:30:28:[m[K [01;31m[Kerror: [m[K‘[01m[KIdleMode[m[K’ has not been declared
+[2.031s]    30 |         motor1.SetIdleMode([01;31m[KIdleMode[m[K::kBrake);
+[2.031s]       |                            [01;31m[K^~~~~~~~[m[K
+[2.031s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:31:28:[m[K [01;31m[Kerror: [m[K‘[01m[KIdleMode[m[K’ has not been declared
+[2.031s]    31 |         motor2.SetIdleMode([01;31m[KIdleMode[m[K::kBrake);
+[2.031s]       |                            [01;31m[K^~~~~~~~[m[K
+[2.032s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:32:28:[m[K [01;31m[Kerror: [m[K‘[01m[KIdleMode[m[K’ has not been declared
+[2.032s]    32 |         motor3.SetIdleMode([01;31m[KIdleMode[m[K::kBrake);
+[2.032s]       |                            [01;31m[K^~~~~~~~[m[K
+[2.032s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:33:28:[m[K [01;31m[Kerror: [m[K‘[01m[KIdleMode[m[K’ has not been declared
+[2.032s]    33 |         motor4.SetIdleMode([01;31m[KIdleMode[m[K::kBrake);
+[2.032s]       |                            [01;31m[K^~~~~~~~[m[K
+[2.032s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:35:30:[m[K [01;31m[Kerror: [m[K‘[01m[KSensorType[m[K’ has not been declared
+[2.032s]    35 |         motor1.SetSensorType([01;31m[KSensorType[m[K::kHallSensor);
+[2.032s]       |                              [01;31m[K^~~~~~~~~~[m[K
+[2.032s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:36:30:[m[K [01;31m[Kerror: [m[K‘[01m[KSensorType[m[K’ has not been declared
+[2.032s]    36 |         motor2.SetSensorType([01;31m[KSensorType[m[K::kHallSensor);
+[2.032s]       |                              [01;31m[K^~~~~~~~~~[m[K
+[2.032s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:37:30:[m[K [01;31m[Kerror: [m[K‘[01m[KSensorType[m[K’ has not been declared
+[2.032s]    37 |         motor3.SetSensorType([01;31m[KSensorType[m[K::kHallSensor);
+[2.032s]       |                              [01;31m[K^~~~~~~~~~[m[K
+[2.032s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:38:30:[m[K [01;31m[Kerror: [m[K‘[01m[KSensorType[m[K’ has not been declared
+[2.032s]    38 |         motor4.SetSensorType([01;31m[KSensorType[m[K::kHallSensor);
+[2.032s]       |                              [01;31m[K^~~~~~~~~~[m[K
+[2.037s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:[m[K In member function ‘[01m[Kvoid MotorDriver::cmd_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.037s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:58:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor1[m[K’ was not declared in this scope
+[2.037s]    58 |             [01;31m[Kmotor1[m[K.SetDutyCycle(0.5);
+[2.037s]       |             [01;31m[K^~~~~~[m[K
+[2.040s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:59:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor2[m[K’ was not declared in this scope
+[2.040s]    59 |             [01;31m[Kmotor2[m[K.SetDutyCycle(0.5);
+[2.040s]       |             [01;31m[K^~~~~~[m[K
+[2.044s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:60:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor3[m[K’ was not declared in this scope
+[2.044s]    60 |             [01;31m[Kmotor3[m[K.SetDutyCycle(0.5);
+[2.044s]       |             [01;31m[K^~~~~~[m[K
+[2.047s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:61:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor4[m[K’ was not declared in this scope
+[2.047s]    61 |             [01;31m[Kmotor4[m[K.SetDutyCycle(0.5);
+[2.047s]       |             [01;31m[K^~~~~~[m[K
+[2.051s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:63:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor1[m[K’ was not declared in this scope
+[2.051s]    63 |             [01;31m[Kmotor1[m[K.SetDutyCycle(-0.5);
+[2.051s]       |             [01;31m[K^~~~~~[m[K
+[2.054s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:64:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor2[m[K’ was not declared in this scope
+[2.054s]    64 |             [01;31m[Kmotor2[m[K.SetDutyCycle(-0.5);
+[2.054s]       |             [01;31m[K^~~~~~[m[K
+[2.058s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:65:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor3[m[K’ was not declared in this scope
+[2.058s]    65 |             [01;31m[Kmotor3[m[K.SetDutyCycle(0.5);
+[2.058s]       |             [01;31m[K^~~~~~[m[K
+[2.061s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:66:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor4[m[K’ was not declared in this scope
+[2.061s]    66 |             [01;31m[Kmotor4[m[K.SetDutyCycle(0.5);
+[2.061s]       |             [01;31m[K^~~~~~[m[K
+[2.065s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:68:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor1[m[K’ was not declared in this scope
+[2.065s]    68 |             [01;31m[Kmotor1[m[K.SetDutyCycle(-0.5);
+[2.065s]       |             [01;31m[K^~~~~~[m[K
+[2.068s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:69:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor2[m[K’ was not declared in this scope
+[2.068s]    69 |             [01;31m[Kmotor2[m[K.SetDutyCycle(-0.5);
+[2.068s]       |             [01;31m[K^~~~~~[m[K
+[2.072s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:70:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor3[m[K’ was not declared in this scope
+[2.072s]    70 |             [01;31m[Kmotor3[m[K.SetDutyCycle(-0.5);
+[2.072s]       |             [01;31m[K^~~~~~[m[K
+[2.075s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:71:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor4[m[K’ was not declared in this scope
+[2.075s]    71 |             [01;31m[Kmotor4[m[K.SetDutyCycle(-0.5);
+[2.075s]       |             [01;31m[K^~~~~~[m[K
+[2.079s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:73:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor1[m[K’ was not declared in this scope
+[2.079s]    73 |             [01;31m[Kmotor1[m[K.SetDutyCycle(0.5);
+[2.079s]       |             [01;31m[K^~~~~~[m[K
+[2.082s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:74:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor2[m[K’ was not declared in this scope
+[2.082s]    74 |             [01;31m[Kmotor2[m[K.SetDutyCycle(0.5);
+[2.082s]       |             [01;31m[K^~~~~~[m[K
+[2.085s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:75:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor3[m[K’ was not declared in this scope
+[2.085s]    75 |             [01;31m[Kmotor3[m[K.SetDutyCycle(-0.5);
+[2.085s]       |             [01;31m[K^~~~~~[m[K
+[2.089s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:76:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor4[m[K’ was not declared in this scope
+[2.089s]    76 |             [01;31m[Kmotor4[m[K.SetDutyCycle(-0.5);
+[2.089s]       |             [01;31m[K^~~~~~[m[K
+[2.092s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:78:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor1[m[K’ was not declared in this scope
+[2.092s]    78 |             [01;31m[Kmotor1[m[K.SetDutyCycle(0.0);
+[2.092s]       |             [01;31m[K^~~~~~[m[K
+[2.097s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:79:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor2[m[K’ was not declared in this scope
+[2.097s]    79 |             [01;31m[Kmotor2[m[K.SetDutyCycle(0.0);
+[2.097s]       |             [01;31m[K^~~~~~[m[K
+[2.100s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:80:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor3[m[K’ was not declared in this scope
+[2.101s]    80 |             [01;31m[Kmotor3[m[K.SetDutyCycle(0.0);
+[2.101s]       |             [01;31m[K^~~~~~[m[K
+[2.104s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:81:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor4[m[K’ was not declared in this scope
+[2.104s]    81 |             [01;31m[Kmotor4[m[K.SetDutyCycle(0.0);
+[2.104s]       |             [01;31m[K^~~~~~[m[K
+[3.815s] gmake[2]: *** [CMakeFiles/motor_driver.dir/build.make:79: CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o] Error 1
+[3.815s] gmake[2]: Leaving directory '/home/zebby/ws1/build/my_robot_pkg'
+[3.815s] gmake[1]: Leaving directory '/home/zebby/ws1/build/my_robot_pkg'
+[3.815s] gmake[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/motor_driver.dir/all] Error 2
+[3.815s] gmake: *** [Makefile:149: all] Error 2
+[3.817s] Invoked command in '/home/zebby/ws1/build/my_robot_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20
