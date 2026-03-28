@@ -1,0 +1,156 @@
+[0.012s] Invoking command in '/home/zebby/ws1/build/my_robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20
+[0.062s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.162s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.240s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.242s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.250s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.260s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.275s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.309s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.312s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.684s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.740s] -- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+[1.741s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.791s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.791s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/zebby/ws1/src/my_robot_pkg/include>
+[1.791s] -- Configured cppcheck exclude dirs and/or files: 
+[1.791s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.791s] -- Added test 'lint_cmake' to check CMake code style
+[1.792s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.792s] -- Added test 'uncrustify' to check C / C++ code style
+[1.792s] -- Configured uncrustify additional arguments: 
+[1.793s] -- Added test 'xmllint' to check XML markup files
+[1.796s] -- Configuring done
+[1.808s] -- Generating done
+[1.810s] -- Build files have been written to: /home/zebby/ws1/build/my_robot_pkg
+[1.831s] [35m[1mConsolidate compiler generated dependencies of target motor_driver[0m
+[1.840s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o[0m
+[3.368s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:22:21:[m[K [01;31m[Kerror: [m[Kexpected identifier before string constant
+[3.368s]    22 |     SparkMax motor1([01;31m[K"can0"[m[K, 1);
+[3.368s]       |                     [01;31m[K^~~~~~[m[K
+[3.368s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:22:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before string constant
+[3.368s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:23:21:[m[K [01;31m[Kerror: [m[Kexpected identifier before string constant
+[3.368s]    23 |     SparkMax motor2([01;31m[K"can0"[m[K, 2);
+[3.368s]       |                     [01;31m[K^~~~~~[m[K
+[3.368s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:23:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before string constant
+[3.368s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:24:21:[m[K [01;31m[Kerror: [m[Kexpected identifier before string constant
+[3.368s]    24 |     SparkMax motor3([01;31m[K"can0"[m[K, 3);
+[3.368s]       |                     [01;31m[K^~~~~~[m[K
+[3.368s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:24:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before string constant
+[3.368s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:25:21:[m[K [01;31m[Kerror: [m[Kexpected identifier before string constant
+[3.368s]    25 |     SparkMax motor4([01;31m[K"can0"[m[K, 4);
+[3.368s]       |                     [01;31m[K^~~~~~[m[K
+[3.368s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:25:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before string constant
+[3.370s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor1[m[K’ does not name a type
+[3.370s]    28 |     [01;31m[Kmotor1[m[K.SetMotorType(MotorType::kBrushless);
+[3.370s]       |     [01;31m[K^~~~~~[m[K
+[3.370s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor2[m[K’ does not name a type
+[3.370s]    29 |     [01;31m[Kmotor2[m[K.SetMotorType(MotorType::kBrushless);
+[3.370s]       |     [01;31m[K^~~~~~[m[K
+[3.371s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor3[m[K’ does not name a type
+[3.371s]    30 |     [01;31m[Kmotor3[m[K.SetMotorType(MotorType::kBrushless);
+[3.371s]       |     [01;31m[K^~~~~~[m[K
+[3.372s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor4[m[K’ does not name a type
+[3.372s]    31 |     [01;31m[Kmotor4[m[K.SetMotorType(MotorType::kBrushless);
+[3.372s]       |     [01;31m[K^~~~~~[m[K
+[3.373s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor1[m[K’ does not name a type
+[3.373s]    33 |     [01;31m[Kmotor1[m[K.SetIdleMode(IdleMode::kBrake);
+[3.373s]       |     [01;31m[K^~~~~~[m[K
+[3.373s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:34:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor2[m[K’ does not name a type
+[3.373s]    34 |     [01;31m[Kmotor2[m[K.SetIdleMode(IdleMode::kBrake);
+[3.373s]       |     [01;31m[K^~~~~~[m[K
+[3.374s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor3[m[K’ does not name a type
+[3.374s]    35 |     [01;31m[Kmotor3[m[K.SetIdleMode(IdleMode::kBrake);
+[3.374s]       |     [01;31m[K^~~~~~[m[K
+[3.375s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor4[m[K’ does not name a type
+[3.375s]    36 |     [01;31m[Kmotor4[m[K.SetIdleMode(IdleMode::kBrake);
+[3.375s]       |     [01;31m[K^~~~~~[m[K
+[3.375s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor1[m[K’ does not name a type
+[3.375s]    38 |     [01;31m[Kmotor1[m[K.SetSensorType(SensorType::kHallSensor);
+[3.375s]       |     [01;31m[K^~~~~~[m[K
+[3.376s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor2[m[K’ does not name a type
+[3.376s]    39 |     [01;31m[Kmotor2[m[K.SetSensorType(SensorType::kHallSensor);
+[3.376s]       |     [01;31m[K^~~~~~[m[K
+[3.377s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor3[m[K’ does not name a type
+[3.377s]    40 |     [01;31m[Kmotor3[m[K.SetSensorType(SensorType::kHallSensor);
+[3.377s]       |     [01;31m[K^~~~~~[m[K
+[3.377s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor4[m[K’ does not name a type
+[3.377s]    41 |     [01;31m[Kmotor4[m[K.SetSensorType(SensorType::kHallSensor);
+[3.377s]       |     [01;31m[K^~~~~~[m[K
+[3.378s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:43:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor1[m[K’ does not name a type
+[3.378s]    43 |     [01;31m[Kmotor1[m[K.BurnFlash();
+[3.378s]       |     [01;31m[K^~~~~~[m[K
+[3.379s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor2[m[K’ does not name a type
+[3.379s]    44 |     [01;31m[Kmotor2[m[K.BurnFlash();
+[3.379s]       |     [01;31m[K^~~~~~[m[K
+[3.379s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:45:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor3[m[K’ does not name a type
+[3.379s]    45 |     [01;31m[Kmotor3[m[K.BurnFlash();
+[3.379s]       |     [01;31m[K^~~~~~[m[K
+[3.380s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:46:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor4[m[K’ does not name a type
+[3.380s]    46 |     [01;31m[Kmotor4[m[K.BurnFlash();
+[3.380s]       |     [01;31m[K^~~~~~[m[K
+[3.408s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:[m[K In member function ‘[01m[Kvoid MotorDriver::cmd_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.409s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:55:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor1(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.409s]    55 |             [01;31m[Kmotor1[m[K.SetDutyCycle(0.5);
+[3.409s]       |             [01;31m[K^~~~~~[m[K
+[3.409s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:56:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor2(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.409s]    56 |             [01;31m[Kmotor2[m[K.SetDutyCycle(0.5);
+[3.409s]       |             [01;31m[K^~~~~~[m[K
+[3.409s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:57:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor3(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.409s]    57 |             [01;31m[Kmotor3[m[K.SetDutyCycle(0.5);
+[3.409s]       |             [01;31m[K^~~~~~[m[K
+[3.409s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:58:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor4(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.409s]    58 |             [01;31m[Kmotor4[m[K.SetDutyCycle(0.5);
+[3.409s]       |             [01;31m[K^~~~~~[m[K
+[3.409s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:61:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor1(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.409s]    61 |             [01;31m[Kmotor1[m[K.SetDutyCycle(-0.5);
+[3.409s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:62:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor2(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    62 |             [01;31m[Kmotor2[m[K.SetDutyCycle(-0.5);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:63:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor3(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    63 |             [01;31m[Kmotor3[m[K.SetDutyCycle(0.5);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:64:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor4(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    64 |             [01;31m[Kmotor4[m[K.SetDutyCycle(0.5);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:67:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor1(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    67 |             [01;31m[Kmotor1[m[K.SetDutyCycle(-0.5);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:68:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor2(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    68 |             [01;31m[Kmotor2[m[K.SetDutyCycle(-0.5);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:69:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor3(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    69 |             [01;31m[Kmotor3[m[K.SetDutyCycle(-0.5);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:70:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor4(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    70 |             [01;31m[Kmotor4[m[K.SetDutyCycle(-0.5);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:73:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor1(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    73 |             [01;31m[Kmotor1[m[K.SetDutyCycle(0.5);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:74:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor2(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    74 |             [01;31m[Kmotor2[m[K.SetDutyCycle(0.5);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:75:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor3(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    75 |             [01;31m[Kmotor3[m[K.SetDutyCycle(-0.5);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:76:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor4(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    76 |             [01;31m[Kmotor4[m[K.SetDutyCycle(-0.5);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:79:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor1(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    79 |             [01;31m[Kmotor1[m[K.SetDutyCycle(0.0);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:80:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor2(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    80 |             [01;31m[Kmotor2[m[K.SetDutyCycle(0.0);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:81:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor3(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    81 |             [01;31m[Kmotor3[m[K.SetDutyCycle(0.0);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[3.410s] [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:82:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KSparkMax MotorDriver::motor4(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.410s]    82 |             [01;31m[Kmotor4[m[K.SetDutyCycle(0.0);
+[3.410s]       |             [01;31m[K^~~~~~[m[K
+[4.739s] gmake[2]: *** [CMakeFiles/motor_driver.dir/build.make:76: CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o] Error 1
+[4.739s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_driver.dir/all] Error 2
+[4.739s] gmake: *** [Makefile:146: all] Error 2
+[4.740s] Invoked command in '/home/zebby/ws1/build/my_robot_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20

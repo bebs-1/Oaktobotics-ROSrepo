@@ -406,6 +406,7 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h \
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h \
   /opt/ros/humble/include/rclcpp/rclcpp/event.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
@@ -689,8 +690,92 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/int32_multi_array.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__type_support.hpp \
+  /home/zebby/ws1/src/my_robot_pkg/include/my_robot_pkg/SparkMax.hpp \
+  /home/zebby/ws1/src/my_robot_pkg/include/my_robot_pkg/SparkBase.hpp \
+  /usr/include/linux/can.h \
+  /usr/include/linux/types.h \
+  /usr/include/x86_64-linux-gnu/asm/types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/linux/socket.h \
+  /usr/include/net/if.h \
+  /usr/include/x86_64-linux-gnu/sys/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/x86_64-linux-gnu/bits/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+  /usr/include/x86_64-linux-gnu/asm/socket.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/x86_64-linux-gnu/asm/sockios.h \
+  /usr/include/asm-generic/sockios.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+  /usr/include/asm-generic/ioctls.h \
+  /usr/include/linux/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
+  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
 
+
+/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
+
+/usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
+
+/usr/include/x86_64-linux-gnu/sys/socket.h:
+
+/usr/include/x86_64-linux-gnu/sys/ioctl.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/x86_64-linux-gnu/asm/types.h:
+
+/usr/include/linux/can.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__type_support.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__traits.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__builder.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__struct.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -698,11 +783,11 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp:
 
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:
 
@@ -727,6 +812,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
+
+/usr/include/linux/posix_types.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
 
@@ -784,6 +871,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
 
+/usr/include/x86_64-linux-gnu/asm/ioctls.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
@@ -823,6 +912,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:
 
@@ -868,6 +959,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
 
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
+
 /usr/include/c++/11/bits/vector.tcc:
 
 /usr/include/c++/11/bits/stl_bvector.h:
@@ -881,6 +974,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
 
 /usr/include/c++/11/bits/stl_heap.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/pointer_traits.hpp:
 
@@ -916,6 +1011,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
+/usr/include/asm-generic/socket.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
@@ -926,11 +1023,11 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /usr/include/stdlib.h:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
-
 /usr/include/c++/11/string_view:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /usr/include/c++/11/numeric:
 
@@ -1064,6 +1161,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /usr/include/time.h:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/int32_multi_array.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
@@ -1114,6 +1213,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
+/usr/include/x86_64-linux-gnu/asm/ioctl.h:
+
 /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
@@ -1147,6 +1248,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket_type.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
 
@@ -1184,6 +1287,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
@@ -1205,6 +1310,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -1268,6 +1375,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
+/usr/include/linux/socket.h:
+
 /usr/include/c++/11/tr1/gamma.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
@@ -1292,9 +1401,13 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /usr/include/c++/11/iosfwd:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__traits.hpp:
+
 /usr/include/c++/11/initializer_list:
 
 /usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/ioctls.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
@@ -1307,6 +1420,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/c++/11/bits/std_function.h:
+
+/usr/include/asm-generic/sockios.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
@@ -1340,6 +1455,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
+
 /usr/include/c++/11/bits/predefined_ops.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
@@ -1353,6 +1470,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/c++/11/bits/concept_check.h:
+
+/usr/include/asm-generic/int-ll64.h:
 
 /usr/include/c++/11/atomic:
 
@@ -1381,6 +1500,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /usr/include/c++/11/bits/stl_tree.h:
 
 /opt/ros/humble/include/rcutils/rcutils/visibility_control.h:
+
+/usr/include/net/if.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
@@ -1439,6 +1560,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/asm/socket.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
 
@@ -1617,6 +1740,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /opt/ros/humble/include/rcl/rcl/guard_condition.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
+
+/usr/include/linux/types.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
 
@@ -1856,6 +1981,10 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
+
 /usr/include/c++/11/tr1/hypergeometric.tcc:
 
 /opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:
@@ -1881,6 +2010,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:
 
 /opt/ros/humble/include/rmw/rmw/names_and_types.h:
+
+/home/zebby/ws1/src/my_robot_pkg/include/my_robot_pkg/SparkMax.hpp:
 
 /usr/include/wctype.h:
 
@@ -2000,6 +2131,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__traits.hpp:
+
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
@@ -2049,6 +2182,8 @@ CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: /home/zebby/ws1/src/my_robot
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/c++/11/tr1/ell_integral.tcc:
+
+/home/zebby/ws1/src/my_robot_pkg/include/my_robot_pkg/SparkBase.hpp:
 
 /opt/ros/humble/include/rcl/rcl/error_handling.h:
 

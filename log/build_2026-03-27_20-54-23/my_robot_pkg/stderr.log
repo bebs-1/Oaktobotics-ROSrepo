@@ -1,0 +1,8 @@
+In file included from [01m[K/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp:3[m[K:
+[01m[K/home/zebby/ws1/src/my_robot_pkg/include/my_robot_pkg/SparkMax.hpp:11:10:[m[K [01;31m[Kfatal error: [m[Kcontroller_pkg/SparkBase.hpp: No such file or directory
+   11 | #include [01;31m[K"controller_pkg/SparkBase.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/motor_driver.dir/build.make:76: CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

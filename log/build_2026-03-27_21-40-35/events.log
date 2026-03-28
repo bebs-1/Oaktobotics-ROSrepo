@@ -1,0 +1,156 @@
+[0.000000] (-) TimerEvent: {}
+[0.000595] (my_robot_pkg) JobQueued: {'identifier': 'my_robot_pkg', 'dependencies': OrderedDict()}
+[0.000725] (my_robot_pkg) JobStarted: {'identifier': 'my_robot_pkg'}
+[0.008530] (my_robot_pkg) JobProgress: {'identifier': 'my_robot_pkg', 'progress': 'cmake'}
+[0.009840] (my_robot_pkg) JobProgress: {'identifier': 'my_robot_pkg', 'progress': 'build'}
+[0.010027] (my_robot_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zebby/ws1/build/my_robot_pkg', '--', '-j20', '-l20'], 'cwd': '/home/zebby/ws1/build/my_robot_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zebby'), ('GIT_EDITOR', ':'), ('GIT_ASKPASS', '/home/zebby/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/zebby/ros2_ws/install/ros2_control_test_assets/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/zebby'), ('OLDPWD', '/home/zebby/ws1'), ('TERM_PROGRAM_VERSION', '1.112.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8b83a05f-9d35-494b-9d37-903034f43df3.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/zebby/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/zebby/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/zebby/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zebby'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/621_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('PATH', '/home/zebby/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/zebby/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/zebby/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.5.10021.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/zebby/AppData/Local/Programs/Python/Python311/Scripts:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/zebby/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zebby/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zebby/AppData/Local/Python/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-5ac63f8153.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/home/zebby/ros2_ws/install/ros2_control_test_assets:/home/zebby/ros2_ws/install/my_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('PWD', '/home/zebby/ws1/build/my_robot_pkg'), ('GIT_MERGE_AUTOEDIT', 'no'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zebby/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/zebby/ros2_ws/install/ros2_control_test_assets:/home/zebby/ros2_ws/install/my_package:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:')]), 'shell': False}
+[0.080482] (my_robot_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.100991] (-) TimerEvent: {}
+[0.182744] (my_robot_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.202150] (-) TimerEvent: {}
+[0.262345] (my_robot_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.269578] (my_robot_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.278159] (my_robot_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.289479] (my_robot_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.302979] (-) TimerEvent: {}
+[0.303425] (my_robot_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.341240] (my_robot_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.343886] (my_robot_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.406466] (-) TimerEvent: {}
+[0.506872] (-) TimerEvent: {}
+[0.611407] (-) TimerEvent: {}
+[0.717404] (-) TimerEvent: {}
+[0.823401] (-) TimerEvent: {}
+[0.929398] (-) TimerEvent: {}
+[1.035393] (-) TimerEvent: {}
+[1.141417] (-) TimerEvent: {}
+[1.247433] (-) TimerEvent: {}
+[1.353422] (-) TimerEvent: {}
+[1.453756] (-) TimerEvent: {}
+[1.554090] (-) TimerEvent: {}
+[1.657198] (-) TimerEvent: {}
+[1.760300] (-) TimerEvent: {}
+[1.863410] (-) TimerEvent: {}
+[1.925482] (my_robot_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.965709] (-) TimerEvent: {}
+[1.977939] (my_robot_pkg) StdoutLine: {'line': b'-- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.978918] (my_robot_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.027986] (my_robot_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.028138] (my_robot_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/zebby/ws1/src/my_robot_pkg/include>\n'}
+[2.028173] (my_robot_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.028422] (my_robot_pkg) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.028869] (my_robot_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.029377] (my_robot_pkg) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.030031] (my_robot_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.030096] (my_robot_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.030562] (my_robot_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.032405] (my_robot_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.044162] (my_robot_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[2.046228] (my_robot_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/zebby/ws1/build/my_robot_pkg\n'}
+[2.066845] (my_robot_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target motor_driver\x1b[0m\n'}
+[2.067043] (-) TimerEvent: {}
+[2.076984] (my_robot_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o\x1b[0m\n'}
+[2.169351] (-) TimerEvent: {}
+[2.273002] (-) TimerEvent: {}
+[2.378985] (-) TimerEvent: {}
+[2.479878] (-) TimerEvent: {}
+[2.585928] (-) TimerEvent: {}
+[2.689293] (-) TimerEvent: {}
+[2.795320] (-) TimerEvent: {}
+[2.901725] (-) TimerEvent: {}
+[3.008198] (-) TimerEvent: {}
+[3.114738] (-) TimerEvent: {}
+[3.220874] (-) TimerEvent: {}
+[3.327297] (-) TimerEvent: {}
+[3.433711] (-) TimerEvent: {}
+[3.534083] (-) TimerEvent: {}
+[3.640566] (-) TimerEvent: {}
+[3.747209] (-) TimerEvent: {}
+[3.853742] (-) TimerEvent: {}
+[3.960150] (-) TimerEvent: {}
+[4.063631] (-) TimerEvent: {}
+[4.170110] (-) TimerEvent: {}
+[4.276604] (-) TimerEvent: {}
+[4.383092] (-) TimerEvent: {}
+[4.487156] (-) TimerEvent: {}
+[4.593269] (-) TimerEvent: {}
+[4.699719] (-) TimerEvent: {}
+[4.806221] (-) TimerEvent: {}
+[4.912684] (-) TimerEvent: {}
+[5.019087] (-) TimerEvent: {}
+[5.122023] (-) TimerEvent: {}
+[5.228443] (-) TimerEvent: {}
+[5.329163] (-) TimerEvent: {}
+[5.435615] (-) TimerEvent: {}
+[5.538875] (-) TimerEvent: {}
+[5.642349] (-) TimerEvent: {}
+[5.744724] (-) TimerEvent: {}
+[5.851230] (-) TimerEvent: {}
+[5.957735] (-) TimerEvent: {}
+[6.064199] (-) TimerEvent: {}
+[6.170502] (-) TimerEvent: {}
+[6.273748] (-) TimerEvent: {}
+[6.376893] (-) TimerEvent: {}
+[6.480069] (-) TimerEvent: {}
+[6.582045] (-) TimerEvent: {}
+[6.685216] (-) TimerEvent: {}
+[6.788351] (-) TimerEvent: {}
+[6.891504] (-) TimerEvent: {}
+[6.994712] (-) TimerEvent: {}
+[7.097869] (-) TimerEvent: {}
+[7.202614] (-) TimerEvent: {}
+[7.309048] (-) TimerEvent: {}
+[7.415491] (-) TimerEvent: {}
+[7.521916] (-) TimerEvent: {}
+[7.572158] (my_robot_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable motor_driver\x1b[0m\n'}
+[7.622105] (-) TimerEvent: {}
+[7.725417] (-) TimerEvent: {}
+[7.827919] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: in function `MotorDriver::MotorDriver()':\n"}
+[7.828072] (-) TimerEvent: {}
+[7.828161] (my_robot_pkg) StderrLine: {'line': b"motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x147): undefined reference to `SparkMax::SparkMax(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned char)'\n"}
+[7.828457] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x1b9): undefined reference to `SparkMax::SparkMax(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned char)'\n"}
+[7.828511] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x22b): undefined reference to `SparkMax::SparkMax(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned char)'\n"}
+[7.828738] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x29d): undefined reference to `SparkMax::SparkMax(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned char)'\n"}
+[7.828932] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x314): undefined reference to `SparkBase::SetMotorType(MotorType)'\n"}
+[7.829180] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x32e): undefined reference to `SparkBase::SetMotorType(MotorType)'\n"}
+[7.829453] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x348): undefined reference to `SparkBase::SetMotorType(MotorType)'\n"}
+[7.829630] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x362): undefined reference to `SparkBase::SetMotorType(MotorType)'\n"}
+[7.829861] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x37c): undefined reference to `SparkBase::SetIdleMode(IdleMode)'\n"}
+[7.830068] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x396): undefined reference to `SparkBase::SetIdleMode(IdleMode)'\n"}
+[7.830306] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x3b0): undefined reference to `SparkBase::SetIdleMode(IdleMode)'\n"}
+[7.830537] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x3ca): undefined reference to `SparkBase::SetIdleMode(IdleMode)'\n"}
+[7.830746] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x3e4): undefined reference to `SparkBase::SetSensorType(SensorType)'\n"}
+[7.830963] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x3fe): undefined reference to `SparkBase::SetSensorType(SensorType)'\n"}
+[7.831306] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x418): undefined reference to `SparkBase::SetSensorType(SensorType)'\n"}
+[7.831484] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x432): undefined reference to `SparkBase::SetSensorType(SensorType)'\n"}
+[7.831670] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x447): undefined reference to `SparkBase::BurnFlash()'\n"}
+[7.831904] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x45c): undefined reference to `SparkBase::BurnFlash()'\n"}
+[7.832138] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x471): undefined reference to `SparkBase::BurnFlash()'\n"}
+[7.832378] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriverC2Ev[_ZN11MotorDriverC5Ev]+0x486): undefined reference to `SparkBase::BurnFlash()'\n"}
+[7.832716] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: in function `MotorDriver::publish_motor_data()':\n"}
+[7.832768] (my_robot_pkg) StderrLine: {'line': b"motor_driver.cpp:(.text._ZN11MotorDriver18publish_motor_dataEv[_ZN11MotorDriver18publish_motor_dataEv]+0x4f): undefined reference to `SparkBase::GetVelocity() const'\n"}
+[7.832951] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver18publish_motor_dataEv[_ZN11MotorDriver18publish_motor_dataEv]+0x6e): undefined reference to `SparkBase::GetVelocity() const'\n"}
+[7.833188] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver18publish_motor_dataEv[_ZN11MotorDriver18publish_motor_dataEv]+0x8d): undefined reference to `SparkBase::GetVelocity() const'\n"}
+[7.833394] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver18publish_motor_dataEv[_ZN11MotorDriver18publish_motor_dataEv]+0xac): undefined reference to `SparkBase::GetVelocity() const'\n"}
+[7.833663] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver18publish_motor_dataEv[_ZN11MotorDriver18publish_motor_dataEv]+0xcb): undefined reference to `SparkBase::GetCurrent() const'\n"}
+[7.833877] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver18publish_motor_dataEv[_ZN11MotorDriver18publish_motor_dataEv]+0xf6): undefined reference to `SparkBase::GetCurrent() const'\n"}
+[7.834125] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver18publish_motor_dataEv[_ZN11MotorDriver18publish_motor_dataEv]+0x121): undefined reference to `SparkBase::GetCurrent() const'\n"}
+[7.834323] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver18publish_motor_dataEv[_ZN11MotorDriver18publish_motor_dataEv]+0x14c): undefined reference to `SparkBase::GetCurrent() const'\n"}
+[7.834605] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: in function `MotorDriver::cmd_callback(std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >)':\n"}
+[7.834665] (my_robot_pkg) StderrLine: {'line': b"motor_driver.cpp:(.text._ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x1d4): undefined reference to `SparkBase::Heartbeat()'\n"}
+[7.834850] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x215): undefined reference to `SparkBase::SetDutyCycle(float)'\n"}
+[7.835048] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x235): undefined reference to `SparkBase::SetDutyCycle(float)'\n"}
+[7.835290] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x255): undefined reference to `SparkBase::SetDutyCycle(float)'\n"}
+[7.835568] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x275): undefined reference to `SparkBase::SetDutyCycle(float)'\n"}
+[7.835755] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: motor_driver.cpp:(.text._ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x2bb): undefined reference to `SparkBase::SetDutyCycle(float)'\n"}
+[7.836023] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o:motor_driver.cpp:(.text._ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN11MotorDriver12cmd_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x2db): more undefined references to `SparkBase::SetDutyCycle(float)' follow\n"}
+[7.840155] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o:(.data.rel.ro._ZTI8SparkMax[_ZTI8SparkMax]+0x10): undefined reference to `typeinfo for SparkBase'\n"}
+[7.840407] (my_robot_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o: in function `SparkMax::~SparkMax()':\n"}
+[7.840454] (my_robot_pkg) StderrLine: {'line': b"motor_driver.cpp:(.text._ZN8SparkMaxD2Ev[_ZN8SparkMaxD5Ev]+0x26): undefined reference to `SparkBase::~SparkBase()'\n"}
+[7.857916] (my_robot_pkg) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[7.858805] (my_robot_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/motor_driver.dir/build.make:159: motor_driver] Error 1\n'}
+[7.858981] (my_robot_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_driver.dir/all] Error 2\n'}
+[7.859103] (my_robot_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.860524] (my_robot_pkg) CommandEnded: {'returncode': 2}
+[7.871920] (my_robot_pkg) JobEnded: {'identifier': 'my_robot_pkg', 'rc': 2}
+[7.882554] (-) EventReactorShutdown: {}

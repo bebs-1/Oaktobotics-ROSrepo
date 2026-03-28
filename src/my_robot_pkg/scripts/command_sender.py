@@ -26,8 +26,9 @@ class MotorCommander(Node):
             time.sleep(2)
         except Exception as e:
             self.get_logger().error(f"Serial port open failed ({SERIAL_PORT}): {e}")
-            self.get_logger().info("Continuing without serial output")
+            self.get_logger().info("Running without serial output; command_sender stays up.")
 
+        # Start socket thread
         self.thread = threading.Thread(target=self.socket_loop, daemon=True)
         self.thread.start()
 
@@ -44,13 +45,14 @@ class MotorCommander(Node):
                     self.buffer += data
                     while b"\n" in self.buffer:
                         line, self.buffer = self.buffer.split(b"\n", 1)
-
+                        # write to serial (if available)
                         if self.ser is not None:
                             try:
                                 self.ser.write(line + b"\n")
                             except Exception as e:
                                 self.get_logger().error(f"Serial write failed: {e}")
 
+                        # publish the line as a ROS message for other nodes
                         msg = String()
                         msg.data = line.decode('utf-8', errors='replace')
                         self.pub.publish(msg)
@@ -67,15 +69,14 @@ class MotorCommander(Node):
         self.running = False
         if self.thread.is_alive():
             self.thread.join(timeout=1.0)
-        if self.ser is not None:
-            try:
-                self.ser.close()
-            except Exception:
-                pass
+        try:
+            self.ser.close()
+        except Exception:
+            pass
         super().destroy_node()
 
     def send_cmd(self):
-        # Placeholder for periodic behavior
+        # Placeholder for periodic command behavior
         return
 
 

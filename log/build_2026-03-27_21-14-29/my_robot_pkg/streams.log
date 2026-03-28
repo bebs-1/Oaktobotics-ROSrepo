@@ -1,0 +1,13 @@
+[0.012s] Invoking command in '/home/zebby/ws1/build/my_robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20
+[0.102s] [35m[1mConsolidate compiler generated dependencies of target motor_driver[0m
+[0.112s] [100%] Built target motor_driver
+[0.119s] Invoked command in '/home/zebby/ws1/build/my_robot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20
+[0.125s] Invoking command in '/home/zebby/ws1/build/my_robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --install /home/zebby/ws1/build/my_robot_pkg
+[0.130s] -- Install configuration: ""
+[0.130s] -- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/include
+[0.130s] -- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/include/my_robot_pkg
+[0.130s] -- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/include/my_robot_pkg/SparkMax.hpp
+[0.131s] -- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/include/my_robot_pkg/SparkBase.hpp
+[0.132s] -- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/launch
+[0.134s] -- Installing: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/package.dsv
+[0.137s] Invoked command in '/home/zebby/ws1/build/my_robot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --install /home/zebby/ws1/build/my_robot_pkg

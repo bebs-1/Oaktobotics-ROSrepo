@@ -12,7 +12,11 @@ find_package(rclpy REQUIRED)
 find_package(std_msgs REQUIRED)
 
 # Build C++ node
-add_executable(motor_driver src/motor_driver.cpp)
+add_executable(motor_driver 
+  src/motor_driver.cpp
+  src/SparkBase.cpp
+  src/SparkMax.cpp
+)
 target_include_directories(motor_driver PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)

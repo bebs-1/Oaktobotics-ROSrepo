@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/motor_driver.dir/src/SparkBase.cpp.o"
+  "CMakeFiles/motor_driver.dir/src/SparkBase.cpp.o.d"
+  "CMakeFiles/motor_driver.dir/src/SparkMax.cpp.o"
+  "CMakeFiles/motor_driver.dir/src/SparkMax.cpp.o.d"
   "CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o"
   "CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o.d"
   "motor_driver"

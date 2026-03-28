@@ -210,6 +210,54 @@ motor_driver/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/build
 .PHONY : motor_driver/fast
 
+src/SparkBase.o: src/SparkBase.cpp.o
+.PHONY : src/SparkBase.o
+
+# target to build an object file
+src/SparkBase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/src/SparkBase.cpp.o
+.PHONY : src/SparkBase.cpp.o
+
+src/SparkBase.i: src/SparkBase.cpp.i
+.PHONY : src/SparkBase.i
+
+# target to preprocess a source file
+src/SparkBase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/src/SparkBase.cpp.i
+.PHONY : src/SparkBase.cpp.i
+
+src/SparkBase.s: src/SparkBase.cpp.s
+.PHONY : src/SparkBase.s
+
+# target to generate assembly for a file
+src/SparkBase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/src/SparkBase.cpp.s
+.PHONY : src/SparkBase.cpp.s
+
+src/SparkMax.o: src/SparkMax.cpp.o
+.PHONY : src/SparkMax.o
+
+# target to build an object file
+src/SparkMax.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/src/SparkMax.cpp.o
+.PHONY : src/SparkMax.cpp.o
+
+src/SparkMax.i: src/SparkMax.cpp.i
+.PHONY : src/SparkMax.i
+
+# target to preprocess a source file
+src/SparkMax.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/src/SparkMax.cpp.i
+.PHONY : src/SparkMax.cpp.i
+
+src/SparkMax.s: src/SparkMax.cpp.s
+.PHONY : src/SparkMax.s
+
+# target to generate assembly for a file
+src/SparkMax.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_driver.dir/build.make CMakeFiles/motor_driver.dir/src/SparkMax.cpp.s
+.PHONY : src/SparkMax.cpp.s
+
 src/motor_driver.o: src/motor_driver.cpp.o
 .PHONY : src/motor_driver.o
 
@@ -250,6 +298,12 @@ help:
 	@echo "... my_robot_pkg_uninstall"
 	@echo "... uninstall"
 	@echo "... motor_driver"
+	@echo "... src/SparkBase.o"
+	@echo "... src/SparkBase.i"
+	@echo "... src/SparkBase.s"
+	@echo "... src/SparkMax.o"
+	@echo "... src/SparkMax.i"
+	@echo "... src/SparkMax.s"
 	@echo "... src/motor_driver.o"
 	@echo "... src/motor_driver.i"
 	@echo "... src/motor_driver.s"

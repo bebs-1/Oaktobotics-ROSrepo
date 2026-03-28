@@ -1,0 +1,40 @@
+[0.008s] Invoking command in '/home/zebby/ws1/build/my_robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20
+[0.021s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.093s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.145s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.147s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.150s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.155s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.163s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.181s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.181s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.779s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.807s] -- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+[1.807s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.846s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.846s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/zebby/ws1/src/my_robot_pkg/include>
+[1.846s] -- Configured cppcheck exclude dirs and/or files: 
+[1.846s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.847s] -- Added test 'lint_cmake' to check CMake code style
+[1.847s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.847s] -- Added test 'uncrustify' to check C / C++ code style
+[1.847s] -- Configured uncrustify additional arguments: 
+[1.847s] -- Added test 'xmllint' to check XML markup files
+[1.848s] -- Configuring done
+[1.854s] -- Generating done
+[1.858s] -- Build files have been written to: /home/zebby/ws1/build/my_robot_pkg
+[1.873s] [35m[1mConsolidate compiler generated dependencies of target motor_driver[0m
+[1.882s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_driver.dir/src/SparkBase.cpp.o[0m
+[1.882s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_driver.dir/src/SparkMax.cpp.o[0m
+[2.332s] [ 75%] [32m[1mLinking CXX executable motor_driver[0m
+[2.569s] [100%] Built target motor_driver
+[2.576s] Invoked command in '/home/zebby/ws1/build/my_robot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/zebby/ws1/build/my_robot_pkg -- -j20 -l20
+[2.581s] Invoking command in '/home/zebby/ws1/build/my_robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --install /home/zebby/ws1/build/my_robot_pkg
+[2.585s] -- Install configuration: ""
+[2.585s] -- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/include
+[2.585s] -- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/include/my_robot_pkg
+[2.585s] -- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/include/my_robot_pkg/SparkMax.hpp
+[2.586s] -- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/include/my_robot_pkg/SparkBase.hpp
+[2.586s] -- Up-to-date: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/launch
+[2.586s] -- Installing: /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/package.dsv
+[2.587s] Invoked command in '/home/zebby/ws1/build/my_robot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zebby/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --install /home/zebby/ws1/build/my_robot_pkg

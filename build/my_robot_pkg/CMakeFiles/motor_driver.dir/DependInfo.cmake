@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/zebby/ws1/src/my_robot_pkg/src/SparkBase.cpp" "CMakeFiles/motor_driver.dir/src/SparkBase.cpp.o" "gcc" "CMakeFiles/motor_driver.dir/src/SparkBase.cpp.o.d"
+  "/home/zebby/ws1/src/my_robot_pkg/src/SparkMax.cpp" "CMakeFiles/motor_driver.dir/src/SparkMax.cpp.o" "gcc" "CMakeFiles/motor_driver.dir/src/SparkMax.cpp.o.d"
   "/home/zebby/ws1/src/my_robot_pkg/src/motor_driver.cpp" "CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o" "gcc" "CMakeFiles/motor_driver.dir/src/motor_driver.cpp.o.d"
   )
 

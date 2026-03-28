@@ -1,1 +1,3 @@
+/home/zebby/ws1/install/my_robot_pkg/include/my_robot_pkg/SparkMax.hpp
+/home/zebby/ws1/install/my_robot_pkg/include/my_robot_pkg/SparkBase.hpp
 /home/zebby/ws1/install/my_robot_pkg/share/my_robot_pkg/package.dsv
