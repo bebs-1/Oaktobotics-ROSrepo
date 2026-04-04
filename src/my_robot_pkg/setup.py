@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'motor_commander_pkg'   # ← change if your package name differs
+package_name = 'my_robot_pkg'   # ← change if your package name differs
 
 setup(
     name=package_name,
@@ -15,7 +15,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'motor_commander = scripts.motor_commander:main',
+            'command_sender = scripts.command_sender:main',
         ],
     },
 )
