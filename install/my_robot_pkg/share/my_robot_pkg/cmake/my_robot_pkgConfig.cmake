@@ -1,1 +1,0 @@
-/home/zebby/ws1/build/my_robot_pkg/ament_cmake_core/my_robot_pkgConfig.cmake
