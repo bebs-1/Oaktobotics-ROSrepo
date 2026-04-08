@@ -20,6 +20,8 @@ public:
         motor2.SetMotorType(MotorType::kBrushless);
         motor3.SetMotorType(MotorType::kBrushless);
         motor4.SetMotorType(MotorType::kBrushless);
+
+        
         
         motor1.SetIdleMode(IdleMode::kBrake);
         motor2.SetIdleMode(IdleMode::kBrake);
