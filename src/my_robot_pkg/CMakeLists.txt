@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 # Build C++ node
 add_executable(motor_driver 
@@ -20,7 +21,7 @@ add_executable(motor_driver
 target_include_directories(motor_driver PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
-ament_target_dependencies(motor_driver rclcpp std_msgs)
+ament_target_dependencies(motor_driver rclcpp std_msgs sensor_msgs)
 
 # Install the C++ executable
 install(TARGETS motor_driver
@@ -53,6 +54,6 @@ endif()
 
 # Export include directories and dependencies
 ament_export_include_directories(include)
-ament_export_dependencies(rclcpp std_msgs)
+ament_export_dependencies(rclcpp std_msgs sensor_msgs)
 
 ament_package()

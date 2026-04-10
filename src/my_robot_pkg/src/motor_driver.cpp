@@ -1,6 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
-#include "std_msgs/msg/int32_multi_array.hpp"
+#include "sensor_msgs/msg/joint_state.hpp"
 #include "my_robot_pkg/SparkMax.hpp"
 #include <chrono>
 #include <iomanip>
@@ -44,7 +44,7 @@ public:
             std::bind(&MotorDriver::cmd_callback, this, std::placeholders::_1));
 
         // Create publisher for motor data
-        publisher_ = this->create_publisher<std_msgs::msg::Int32MultiArray>(
+        publisher_ = this->create_publisher<sensor_msgs::msg::JointState>(
             "motor_data", 10);
 
         // Create timer to publish motor data at 10 Hz
@@ -60,26 +60,27 @@ private:
     SparkMax motor4;
 
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_;
-    rclcpp::Publisher<std_msgs::msg::Int32MultiArray>::SharedPtr publisher_;
+    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
 
     void publish_motor_data()
     {
-        auto message = std_msgs::msg::Int32MultiArray();
-        
-        // Read motor data and store as integers
-        int vel1 = static_cast<int>(motor1.GetVelocity());
-        int vel2 = static_cast<int>(motor2.GetVelocity());
-        int vel3 = static_cast<int>(motor3.GetVelocity());
-        int vel4 = static_cast<int>(motor4.GetVelocity());
-        
-        int curr1 = static_cast<int>(motor1.GetCurrent() * 1000);  // Convert to mA
-        int curr2 = static_cast<int>(motor2.GetCurrent() * 1000);
-        int curr3 = static_cast<int>(motor3.GetCurrent() * 1000);
-        int curr4 = static_cast<int>(motor4.GetCurrent() * 1000);
+        auto message = sensor_msgs::msg::JointState();
+        message.header.stamp = this->now();
 
-        // Populate data array: [vel1, curr1, vel2, curr2, vel3, curr3, vel4, curr4]
-        message.data = {vel1, curr1, vel2, curr2, vel3, curr3, vel4, curr4};
+        message.name     = {"motor1", "motor2", "motor3", "motor4"};
+        message.velocity = {
+            static_cast<double>(motor1.GetVelocity()),
+            static_cast<double>(motor2.GetVelocity()),
+            static_cast<double>(motor3.GetVelocity()),
+            static_cast<double>(motor4.GetVelocity())
+        };
+        message.effort = {
+            static_cast<double>(motor1.GetCurrent()),
+            static_cast<double>(motor2.GetCurrent()),
+            static_cast<double>(motor3.GetCurrent()),
+            static_cast<double>(motor4.GetCurrent())
+        };
 
         publisher_->publish(message);
         RCLCPP_DEBUG(this->get_logger(), "Published motor data");

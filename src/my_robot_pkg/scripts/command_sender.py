@@ -2,6 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+from sensor_msgs.msg import Joy
 import time
 import socket
 import serial
@@ -16,7 +17,7 @@ class MotorCommander(Node):
     def __init__(self):
         super().__init__('motor_commander')
         self.pub = self.create_publisher(String, 'motor_cmd', 10)
-        self.timer = self.create_timer(1.0, self.send_cmd)
+        self.create_subscription(Joy, 'joy', self.joy_callback, 10)
         self.buffer = b""
         self.running = True
 
@@ -28,42 +29,8 @@ class MotorCommander(Node):
             self.get_logger().error(f"Serial port open failed ({SERIAL_PORT}): {e}")
             self.get_logger().info("Running without serial output; command_sender stays up.")
 
-        # Start socket thread
-        self.thread = threading.Thread(target=self.socket_loop, daemon=True)
-        self.thread.start()
-
-    def socket_loop(self):
-        try:
-            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-                s.connect((HOST, PORT))
-                s.sendall(b"Hello, world\n")
-                while self.running:
-                    data = s.recv(1024)
-                    if not data:
-                        time.sleep(0.05)
-                        continue
-                    self.buffer += data
-                    while b"\n" in self.buffer:
-                        line, self.buffer = self.buffer.split(b"\n", 1)
-                        # write to serial (if available)
-                        if self.ser is not None:
-                            try:
-                                self.ser.write(line + b"\n")
-                            except Exception as e:
-                                self.get_logger().error(f"Serial write failed: {e}")
-
-                        # publish the line as a ROS message for other nodes
-                        msg = String()
-                        msg.data = line.decode('utf-8', errors='replace')
-                        self.pub.publish(msg)
-
-                        if line == b"close":
-                            self.get_logger().info("Received 'close' command, shutting down socket loop")
-                            self.running = False
-                            break
-        except Exception as e:
-            self.get_logger().error(f"Socket error: {e}")
-
+        
+        
     def destroy_node(self):
         self.get_logger().info("Shutting down CommandSender")
         self.running = False
@@ -75,9 +42,29 @@ class MotorCommander(Node):
             pass
         super().destroy_node()
 
-    def send_cmd(self):
-        # Placeholder for periodic command behavior
-        return
+    def joy_callback(self, msg: Joy):
+        # axes[1]: left stick Y (forward/backward), axes[0]: left stick X (turn)
+        DEADBAND = 0.2
+        fwd = msg.axes[1] if len(msg.axes) > 1 else 0.0
+        turn = msg.axes[0] if len(msg.axes) > 0 else 0.0
+
+        cmd = String()
+        if abs(fwd) > abs(turn):
+            if fwd > DEADBAND:
+                cmd.data = 'forward'
+            elif fwd < -DEADBAND:
+                cmd.data = 'backward'
+            else:
+                cmd.data = 'stop'
+        else:
+            if turn > DEADBAND:
+                cmd.data = 'left'
+            elif turn < -DEADBAND:
+                cmd.data = 'right'
+            else:
+                cmd.data = 'stop'
+
+        self.pub.publish(cmd)
 
 
 def main(args=None):
