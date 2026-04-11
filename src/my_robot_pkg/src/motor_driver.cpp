@@ -1,5 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
+#include "std_msgs/msg/int32_multi_array.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 #include "my_robot_pkg/SparkMax.hpp"
 #include <chrono>
@@ -33,13 +33,33 @@ public:
         motor3.SetSensorType(SensorType::kHallSensor);
         motor4.SetSensorType(SensorType::kHallSensor);
 
+        motor1.SetP(0, 0.0002f);
+        motor1.SetI(0, 0.0f);
+        motor1.SetD(0, 0.0f);
+        motor1.SetF(0, 0.000205f);
+
+        motor2.SetP(0, 0.0002f);
+        motor2.SetI(0, 0.0f);
+        motor2.SetD(0, 0.0f);
+        motor2.SetF(0, 0.000205f);
+
+        motor3.SetP(0, 0.0002f);
+        motor3.SetI(0, 0.0f);
+        motor3.SetD(0, 0.0f);
+        motor3.SetF(0, 0.000205f);
+
+        motor4.SetP(0, 0.0002f);
+        motor4.SetI(0, 0.0f);
+        motor4.SetD(0, 0.0f);
+        motor4.SetF(0, 0.000205f);
+
         motor1.BurnFlash();
         motor2.BurnFlash();
         motor3.BurnFlash();
         motor4.BurnFlash();
 
         // Create subscriber for motor commands
-        sub_ = this->create_subscription<std_msgs::msg::String>(
+        sub_ = this->create_subscription<std_msgs::msg::Int32MultiArray>(
             "motor_cmd", 10,
             std::bind(&MotorDriver::cmd_callback, this, std::placeholders::_1));
 
@@ -59,7 +79,7 @@ private:
     SparkMax motor3;
     SparkMax motor4;
 
-    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_;
+    rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr sub_;
     rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
 
@@ -86,41 +106,19 @@ private:
         RCLCPP_DEBUG(this->get_logger(), "Published motor data");
     }
 
-    void cmd_callback(const std_msgs::msg::String::SharedPtr msg)
+    void cmd_callback(const std_msgs::msg::Int32MultiArray::SharedPtr msg)
     {
-        std::string cmd = msg->data;
-        RCLCPP_INFO(this->get_logger(), "Received: %s", cmd.c_str());
+        if (msg->data.size() < 4) {
+            RCLCPP_WARN(this->get_logger(), "Expected 4 values, got %zu", msg->data.size());
+            return;
+        }
         SparkBase::Heartbeat();
-        if(cmd == "forward") {
-            motor1.SetDutyCycle(0.5);
-            motor2.SetDutyCycle(0.5);
-            motor3.SetDutyCycle(0.5);
-            motor4.SetDutyCycle(0.5);
-        }
-        else if(cmd == "left") {
-            motor1.SetDutyCycle(-0.5);
-            motor2.SetDutyCycle(-0.5);
-            motor3.SetDutyCycle(0.5);
-            motor4.SetDutyCycle(0.5);
-        }
-        else if(cmd == "backward") {
-            motor1.SetDutyCycle(-0.5);
-            motor2.SetDutyCycle(-0.5);
-            motor3.SetDutyCycle(-0.5);
-            motor4.SetDutyCycle(-0.5);
-        }
-        else if(cmd == "right") {
-            motor1.SetDutyCycle(0.5);
-            motor2.SetDutyCycle(0.5);
-            motor3.SetDutyCycle(-0.5);
-            motor4.SetDutyCycle(-0.5);
-        }
-        else if(cmd == "stop") {
-            motor1.SetDutyCycle(0.0);
-            motor2.SetDutyCycle(0.0);
-            motor3.SetDutyCycle(0.0);
-            motor4.SetDutyCycle(0.0);
-        }
+        motor1.SetVelocity(msg->data[0]);
+        motor2.SetVelocity(msg->data[1]);
+        motor3.SetVelocity(msg->data[2]);
+        motor4.SetVelocity(msg->data[3]);
+        RCLCPP_INFO(this->get_logger(), "CMD: [%d, %d, %d, %d]",
+            msg->data[0], msg->data[1], msg->data[2], msg->data[3]);
     }
 };
 

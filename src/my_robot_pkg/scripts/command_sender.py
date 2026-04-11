@@ -1,41 +1,28 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from std_msgs.msg import int32 MultiArrayLayout, MultiArrayDimension, Int32MultiArray
 from sensor_msgs.msg import Joy
-import time
-import socket
 import serial
-import threading
 
-HOST = "192.168.1.101"
-PORT = 65432
 SERIAL_PORT = "/dev/ttyUSB0"  # change from 'COM5' to your system device
 BAUD = 9600
 
 class MotorCommander(Node):
     def __init__(self):
         super().__init__('motor_commander')
-        self.pub = self.create_publisher(String, 'motor_cmd', 10)
+        self.pub = self.create_publisher(Int32MultiArray, 'motor_cmd', 10)
         self.create_subscription(Joy, 'joy', self.joy_callback, 10)
-        self.buffer = b""
-        self.running = True
 
         self.ser = None
         try:
             self.ser = serial.Serial(SERIAL_PORT, BAUD, timeout=1)
-            time.sleep(2)
         except Exception as e:
             self.get_logger().error(f"Serial port open failed ({SERIAL_PORT}): {e}")
             self.get_logger().info("Running without serial output; command_sender stays up.")
 
-        
-        
     def destroy_node(self):
         self.get_logger().info("Shutting down CommandSender")
-        self.running = False
-        if self.thread.is_alive():
-            self.thread.join(timeout=1.0)
         try:
             self.ser.close()
         except Exception:
@@ -51,18 +38,18 @@ class MotorCommander(Node):
         cmd = String()
         if abs(fwd) > abs(turn):
             if fwd > DEADBAND:
-                cmd.data = 'forward'
+                cmd.data = [500, 500]  # forward    
             elif fwd < -DEADBAND:
-                cmd.data = 'backward'
+                cmd.data = [-500, -500]  # backward
             else:
-                cmd.data = 'stop'
+                cmd.data = [0, 0]  # stop
         else:
             if turn > DEADBAND:
-                cmd.data = 'left'
+                cmd.data = [500, -500]  # left
             elif turn < -DEADBAND:
-                cmd.data = 'right'
+                cmd.data = [-500, 500]  # right
             else:
-                cmd.data = 'stop'
+                cmd.data = [0, 0]  # stop
 
         self.pub.publish(cmd)
 
