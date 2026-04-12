@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import int32 MultiArrayLayout, MultiArrayDimension, Int32MultiArray
+from std_msgs.msg import Int32MultiArray
 from sensor_msgs.msg import Joy
 import serial
 
@@ -35,19 +35,19 @@ class MotorCommander(Node):
         fwd = msg.axes[1] if len(msg.axes) > 1 else 0.0
         turn = msg.axes[0] if len(msg.axes) > 0 else 0.0
 
-        cmd = String()
+        cmd = [0,0,0,0]
         if abs(fwd) > abs(turn):
             if fwd > DEADBAND:
-                cmd.data = [500, 500]  # forward    
+                cmd.data = [500, 500, 500, 500]  # forward    
             elif fwd < -DEADBAND:
-                cmd.data = [-500, -500]  # backward
+                cmd.data = [-500, -500, -500, -500]  # backward
             else:
-                cmd.data = [0, 0]  # stop
+                cmd.data = [0, 0, 0, 0]  # stop
         else:
             if turn > DEADBAND:
-                cmd.data = [500, -500]  # left
+                cmd.data = [500, 500, 500, 500]  # left
             elif turn < -DEADBAND:
-                cmd.data = [-500, 500]  # right
+                cmd.data = [500, 500, 500, 500]  # right
             else:
                 cmd.data = [0, 0]  # stop
 
