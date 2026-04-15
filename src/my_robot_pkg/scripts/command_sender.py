@@ -34,8 +34,10 @@ class MotorCommander(Node):
         DEADBAND = 0.2
         fwd = msg.axes[1] if len(msg.axes) > 1 else 0.0
         turn = msg.axes[0] if len(msg.axes) > 0 else 0.0
+        act1 = msg.axes[6] if len(msg.axes) > 6 else 0.0
+        act2 = msg.axes[7] if len(msg.axes) > 7 else 0.0
 
-        cmd = Int32MultiArray();
+        cmd = Int32MultiArray()
         if abs(fwd) > abs(turn):
             if fwd > DEADBAND:
                 cmd.data = [500, 500, 500, 500]  # forward    
@@ -45,12 +47,23 @@ class MotorCommander(Node):
                 cmd.data = [0, 0, 0, 0]  # stop
         else:
             if turn > DEADBAND:
-                cmd.data = [500, 500, 500, 500]  # left
+                cmd.data = [500, 500, -500, -500]  # left
             elif turn < -DEADBAND:
-                cmd.data = [500, 500, 500, 500]  # right
+                cmd.data = [-500, -500, 500, 500]  # right
             else:
-                cmd.data = [0, 0]  # stop
-
+                cmd.data = [0, 0, 0, 0]  # stop
+        if(act1 > DEADBAND):
+            self.ser.write(b'u1')  # Activate mechanism 1
+        elif(act1 < -DEADBAND):
+            self.ser.write(b'd1')  # Deactivate mechanism 1
+        else:
+            self.ser.write(b'stop')  # Stop mechanism 1
+        if(act2 > DEADBAND):
+            self.ser.write(b'u2')  # Activate mechanism 2
+        elif(act2 < -DEADBAND):
+            self.ser.write(b'd2')  # Deactivate mechanism 2
+        else:
+            self.ser.write(b'stop')  # Stop mechanism 2
         self.pub.publish(cmd)
 
 
