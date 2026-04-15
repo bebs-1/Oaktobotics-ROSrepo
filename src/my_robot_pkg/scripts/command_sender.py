@@ -35,7 +35,7 @@ class MotorCommander(Node):
         fwd = msg.axes[1] if len(msg.axes) > 1 else 0.0
         turn = msg.axes[0] if len(msg.axes) > 0 else 0.0
 
-        cmd = [0,0,0,0]
+        cmd = Int32MultiArray();
         if abs(fwd) > abs(turn):
             if fwd > DEADBAND:
                 cmd.data = [500, 500, 500, 500]  # forward    
