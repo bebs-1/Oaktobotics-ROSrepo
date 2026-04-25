@@ -5,7 +5,7 @@ from std_msgs.msg import Int32MultiArray
 from sensor_msgs.msg import Joy
 import serial
 
-SERIAL_PORT = "/dev/ttyUSB0"  # change from 'COM5' to your system device
+SERIAL_PORT = "/dev/ttyS4"  # change from 'COM5' to your system device
 BAUD = 9600
 
 class MotorCommander(Node):
